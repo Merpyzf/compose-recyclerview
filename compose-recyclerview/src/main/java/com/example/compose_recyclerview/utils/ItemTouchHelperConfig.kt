@@ -69,6 +69,12 @@ class ItemTouchHelperConfig {
     var isLongPressDragEnabled: Boolean = true
 
     /**
+     * Flag to enable or disable item swipe behavior.
+     * Default is false.
+     */
+    var isItemViewSwipeEnable: Boolean = false
+
+    /**
      * Swipe directions for items. If not provided, all directions are enabled by default.
      */
     var swipeDirs: Int? = null

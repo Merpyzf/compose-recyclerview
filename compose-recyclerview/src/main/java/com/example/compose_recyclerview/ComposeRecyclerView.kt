@@ -95,7 +95,9 @@ fun <T> ComposeRecyclerView(
     }
 
     val config = remember {
-        ItemTouchHelperConfig().apply { itemTouchHelperConfig?.invoke(this) }
+        ItemTouchHelperConfig().apply {
+            itemTouchHelperConfig?.invoke(this)
+        }
     }
 
     val itemTouchHelper = remember {
@@ -169,6 +171,10 @@ fun <T> ComposeRecyclerView(
 
             override fun isLongPressDragEnabled(): Boolean {
                 return config.isLongPressDragEnabled
+            }
+
+            override fun isItemViewSwipeEnabled(): Boolean {
+                return config.isItemViewSwipeEnable
             }
         })
     }
