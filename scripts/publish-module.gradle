@@ -2,7 +2,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 group = PUBLISH_GROUP_ID
-version = rootProject.ext["publish_version"]
+version = "1.0.6"
 
 afterEvaluate {
     publishing {
@@ -12,7 +12,7 @@ afterEvaluate {
                 // we'll set up later
                 groupId PUBLISH_GROUP_ID
                 artifactId PUBLISH_ARTIFACT_ID
-                version rootProject.ext["publish_version"]
+                version "1.0.6"
 
                 /// Two artifacts, the `aar` (or `jar`) and the sources
                 if (project.plugins.findPlugin("com.android.library")) {
