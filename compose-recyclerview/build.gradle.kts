@@ -4,7 +4,7 @@ plugins {
 }
 
 ext {
-    set("PUBLISH_GROUP_ID", "com.canopas")
+    set("PUBLISH_GROUP_ID", "com.merpyzf")
     set("PUBLISH_ARTIFACT_ID", "compose_recyclerview")
 }
 
